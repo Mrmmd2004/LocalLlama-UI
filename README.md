@@ -30,6 +30,27 @@ Pick one of the three x64 builds:
 The Setup and the zip come with llama.cpp inside. The single `Portable.exe` is kept small: choose your llama.cpp
 folder (or zip) once in **Settings**, or put a `llama` folder next to the exe.
 
+## 🧩 Add the engine and a model (required)
+
+JizzAI is only the chat window. To actually chat you need two things, both free, and both are added once in **Settings (⚙)**:
+
+**1. The engine – llama.cpp** (it runs the model)
+- Download from the [llama.cpp releases](https://github.com/ggml-org/llama.cpp/releases) → open the newest release → under *Assets* take the Windows zip:
+  - `llama-…-bin-win-cpu-x64.zip` – works on every PC (CPU only). Best choice if you are not sure.
+  - `llama-…-bin-win-vulkan-x64.zip` – uses most GPUs (NVIDIA / AMD / Intel) for more speed.
+  - `llama-…-bin-win-cuda-…-x64.zip` – NVIDIA GPUs only (may need the matching `cudart` zip from the same release).
+- You do **not** need to extract it: in Settings choose the zip or the extracted folder as the **llama.cpp folder** (or just drag it onto the JizzAI window). `llama-server.exe` is found automatically.
+- Builds that already include llama.cpp (Setup and Portable.zip) can skip this step.
+
+**2. A model – a `.gguf` file**
+- Download from [Hugging Face](https://huggingface.co/models?library=gguf&sort=trending) (search for “GGUF”). A good small start is
+  [Gemma 3 1B (GGUF)](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/tree/main) — pick a file such as `…Q4_K_M.gguf`.
+- Rule of thumb: the file size should be smaller than your free RAM (or VRAM when using a GPU build). Smaller models and lower quantisations (Q4) are faster and lighter.
+- Put your models in one folder (sub-folders are fine), then in Settings set it as the **Models folder** — or drag a single `.gguf` onto the window.
+- Vision (images): download the model **and** its `mmproj` file and keep them in the same folder; JizzAI picks it up automatically.
+
+Then press **Start model** and chat.
+
 ## Features
 
 - **Local & private** – runs `llama-server` on `127.0.0.1`; your chats are saved on your PC only
@@ -143,6 +164,27 @@ All options are listed at the top of `build.py`.
 
 نصاب و zip همراه llama.cpp هستند. `Portable.exe` تکی سبک نگه داشته شده: یک بار در **تنظیمات** پوشه (یا zip) برنامه‌ی llama.cpp را انتخاب کن،
 یا پوشه‌ی `llama` را کنار exe بگذار.
+
+### 🧩 افزودن موتور و مدل (ضروری)
+
+JizzAI فقط پنجره‌ی گفتگوست. برای گفتگو واقعاً به دو چیز رایگان نیاز داری که هر دو فقط یک بار در **تنظیمات (⚙)** اضافه می‌شوند:
+
+**۱. موتور – llama.cpp** (اجرای مدل را انجام می‌دهد)
+- از [صفحه‌ی releases برنامه‌ی llama.cpp](https://github.com/ggml-org/llama.cpp/releases) آخرین نسخه را باز کن ← در بخش *Assets* فایل zip ویندوز را بردار:
+  - `llama-…-bin-win-cpu-x64.zip` – روی همه‌ی کامپیوترها کار می‌کند (فقط CPU). اگر مطمئن نیستی این را بردار.
+  - `llama-…-bin-win-vulkan-x64.zip` – از بیشتر کارت‌های گرافیک (NVIDIA / AMD / Intel) برای سرعت بیشتر استفاده می‌کند.
+  - `llama-…-bin-win-cuda-…-x64.zip` – فقط کارت‌های NVIDIA (ممکن است zip مربوط به `cudart` از همان نسخه هم لازم باشد).
+- لازم نیست استخراجش کنی: در تنظیمات zip یا پوشه‌ی استخراج‌شده را به‌عنوان **پوشه‌ی llama.cpp** بده (یا فقط روی پنجره‌ی JizzAI بکشش). `llama-server.exe` خودکار پیدا می‌شود.
+- نسخه‌هایی که llama.cpp داخلشان هست (Setup و Portable.zip) این مرحله را لازم ندارند.
+
+**۲. مدل – فایل `.gguf`**
+- از [Hugging Face](https://huggingface.co/models?library=gguf&sort=trending) دانلود کن (عبارت «GGUF» را جستجو کن). یک شروع خوب و سبک
+  [Gemma 3 1B (GGUF)](https://huggingface.co/unsloth/gemma-3-1b-it-GGUF/tree/main) است — فایلی مثل `…Q4_K_M.gguf` را بردار.
+- قاعده‌ی سرانگشتی: حجم فایل باید از رم آزادت (یا VRAM اگر نسخه‌ی GPU می‌زنی) کمتر باشد. مدل‌های کوچک‌تر و کوانتیزه‌ی پایین‌تر (Q4) سریع‌تر و سبک‌ترند.
+- مدل‌ها را در یک پوشه بگذار (زیرپوشه هم مشکلی ندارد) و در تنظیمات آن را به‌عنوان **پوشه‌ی مدل‌ها** بده — یا یک فایل `.gguf` را روی پنجره بکش.
+- مدل بینایی (تصویر): هم مدل و **هم** فایل `mmproj` آن را دانلود کن و کنار هم در یک پوشه بگذار؛ JizzAI خودکار پیدایش می‌کند.
+
+بعد **اجرای مدل** را بزن و گفتگو کن.
 
 ### امکانات
 
