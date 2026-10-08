@@ -1,3 +1,7 @@
+<a id="english"></a>
+
+<p align="center"><b>English</b> &nbsp;|&nbsp; <a href="#فارسی">🇮🇷 فارسی</a></p>
+
 # JizzAI — a modern desktop chat UI for llama.cpp
 
 **JizzAI** is a lightweight Windows desktop app for chatting with local LLMs (GGUF models) through
@@ -9,8 +13,6 @@ file attachments and full control over the engine settings.
 English + Persian (RTL) interface · dark/light theme · chat history · drag & drop files
 
 **Version 2.8.0 · Windows 10/11 · 64-bit (x64)**
-
-🇮🇷 **[مستندات فارسی ← Persian documentation below](#فارسی)**
 
 ![chat](screenshots/chat-code.png)
 
@@ -111,6 +113,8 @@ All options are listed at the top of `build.py`.
 
 ## فارسی
 
+<p align="center"><a href="#english">🇬🇧 English</a> &nbsp;|&nbsp; <b>فارسی</b></p>
+
 <div dir="rtl">
 
 # JizzAI — رابط گفتگوی مدرن دسکتاپ برای llama.cpp
@@ -123,6 +127,8 @@ All options are listed at the top of `build.py`.
 رابط فارسی و انگلیسی · پوسته‌ی تیره و روشن · تاریخچه‌ی گفتگو · کشیدن و رها کردن فایل
 
 **نسخه‌ی ۲.۸.۰ · ویندوز ۱۰/۱۱ · ۶۴ بیتی (x64)**
+
+![chat](screenshots/chat-code.png)
 
 ### ⬇️ دانلود
 
@@ -159,6 +165,10 @@ All options are listed at the top of `build.py`.
 - **گزینه‌های رفتار برنامه** – اجرای خودکار مدل با زدن ارسال، اسکرول خودکار هنگام نوشته شدن پاسخ، نام‌گذاری خودکار گفتگوها، تنظیم اندازه‌ی متن، حداکثر طول پاسخ و دکمه‌ی «رفتن به آخرین پیام»
 - **رابط فارسی / انگلیسی** و پوسته‌ی تیره / روشن
 - **نسخه‌های ۶۴ بیتی (x64)** – نصاب، exe پرتابل تک‌فایلی و zip پرتابل
+
+| انتخاب مدل | تنظیمات |
+|---|---|
+| ![picker](screenshots/model-picker.png) | ![settings](screenshots/settings.png) |
 
 ### شروع سریع
 
