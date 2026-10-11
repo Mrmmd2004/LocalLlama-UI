@@ -1,0 +1,3 @@
+# Run from source:  pip install -r requirements.txt
+PyQt6>=6.5
+pypdf>=4.0        # optional: lets the app read PDF files

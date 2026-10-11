@@ -1,0 +1,4 @@
+# Only needed to build the .exe / installer:  pip install -r requirements-build.txt
+-r requirements.txt
+pyinstaller>=6.0
+pillow>=10.0      # only used by make_icon.py
